@@ -11,6 +11,8 @@ Place your python programs in the "Services" folder and adapt them to the struct
 >__Warning__
 >Service names cannot contain spaces or capital letters.
 
+## Usage:
+
 To Start the Server, run the following command in the console:
 
 ```
@@ -24,3 +26,9 @@ python Client.py
 ```
 
 If you put '?' as a parameter, both will respond with a list of possible parameters.
+
+>__Warning__
+>Modifying the folder structure may cause errors!
+
+>__Note__
+>Only the "Client.py" file can be executed without being inside the project folder.
