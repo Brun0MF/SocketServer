@@ -28,7 +28,7 @@ python Client.py
 If you put '?' as a parameter, both will respond with a list of possible parameters.
 
 >__Warning__
->Modifying the folder structure may cause errors!
+>Modifying folder/project structure may cause errors!
 
 >__Note__
 >Only the "Client.py" file can be executed without being inside the project folder.
