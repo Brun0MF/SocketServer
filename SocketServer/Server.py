@@ -57,12 +57,12 @@ def startServer(host = "127.0.0.1",port = 8050,max_conn = 5):
                         response+=ve.yellow(" > ")+serv.replace(".py","")+"\n"
                 print(ve.cyan("\n<END: ServiceList>"))
 
-            elif(str(data).strip().lower() == "?"):
+            elif(str(data).strip().lower() == "help"):
                 print(current_time()+"Sending Command List...")
                 print(ve.cyan("<START: CommandList>\n"))
                 response = ve.cyan("Commands:\n")
-                print("shutdown\necho\nservices\n?\n{service_name}")
-                response += ve.yellow(" > ")+"shutdown\n"+ve.yellow(" > ")+"echo\n"+ve.yellow(" > ")+"services\n"+ve.yellow(" > ")+"?\n"+ve.yellow(" > ")+"{service_name}"
+                print("shutdown\necho\nservices\nhelp\n{service_name}")
+                response += ve.yellow(" > ")+"shutdown\n"+ve.yellow(" > ")+"echo\n"+ve.yellow(" > ")+"services\n"+ve.yellow(" > ")+"help\n"+ve.yellow(" > ")+"{service_name}"
                 print(ve.cyan("\n<END: CommandList>"))
 
             elif(str(data).strip().lower() == ""):

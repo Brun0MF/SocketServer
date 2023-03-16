@@ -2,7 +2,7 @@ import socket
 import sys
 
 
-def sendCommandToServer(cmd = "",host="127.0.0.1",port=8050):
+def sendCommandToServer(cmd = " ",host="127.0.0.1",port=8050):
 
     client_socket = socket.socket()
     client_socket.connect((host, port))
@@ -10,6 +10,7 @@ def sendCommandToServer(cmd = "",host="127.0.0.1",port=8050):
     data = client_socket.recv(1024).decode()
     print(data)
     client_socket.close()
+
 
 try:
     if(len(sys.argv)==2):
@@ -25,4 +26,3 @@ try:
         sendCommandToServer()
 except Exception as ex:
     print("\033[91mError: "+str(ex)+"\033[00m")
-
